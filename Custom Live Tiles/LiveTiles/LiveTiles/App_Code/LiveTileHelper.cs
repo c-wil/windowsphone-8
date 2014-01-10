@@ -41,7 +41,9 @@ namespace LiveTiles.App_Code
             // get the total count of pinned tiles
             int liveTileCount = ShellTile.ActiveTiles.Count() + 1;
 
-            // get the active tile
+            /* Check if the pinned tile already exists, create a 
+             * new one if it doesn't.
+             */
             ShellTile tile = ShellTile.ActiveTiles.FirstOrDefault(x => x.NavigationUri.ToString().Contains("ref=" + liveTileCount.ToString()));
             if (tile == null)
             {
