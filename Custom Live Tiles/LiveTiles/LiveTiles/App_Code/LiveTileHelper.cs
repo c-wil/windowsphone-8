@@ -58,7 +58,7 @@ namespace LiveTiles.App_Code
 
         /// <summary>
         /// Sets up a new flip tile data object.
-        /// This function can be exapnded to include more options for a tile
+        /// This function can be expanded to include more options for a tile
         /// such as modifiying other tile sizes
         /// </summary>
         /// <param name="mediumBackgroundImage">The uri for the medium tile image</param>
